@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainimg {
+  background-image: url(assets/img/cake-3163117_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}

@@ -1,11 +1,136 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* GRID AREA */
+
+.logo {
+  grid-area: logo;
+}
+
+.navbar {
+  grid-area: header;
+}
+
+.dedication-p {
+  grid-area: dedication-p;
+}
+
+.dedication-img {
+  grid-area: dedication-img;
+}
+
+.personal-p {
+  grid-area: personal-p;
+}
+
+.personal-img {
+  grid-area: personal-img;
+}
+
+/* GRID AREA */
+
+.logo {
+  align-self: center;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  padding: 2rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 2fr);
+  grid-template-rows: auto;
+  grid-template-areas: "logo logo . . . . header header";
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  color: white;
+  border: 1px solid white;
+  float: left;
+  padding: 2rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .mainimg {
-  background-image: url(assets/img/cake-3163117_1920.jpg);
-  background-size: cover;
+  background-image: url(assets/img/sweets-887722_1920.jpg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 51vh;
+}
+
+.dedication-img img {
+  width: 100%;
+}
+
+.dedication {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". dedication-p . dedication-img dedication-img";
+  margin-top: 4rem;
+  padding: 3rem;
+}
+
+.dedication-p {
+  align-self: center;
+  text-align: center;
+}
+
+.dedication-p p {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.goal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background: url(assets/img/apple-pie-474954_1920.jpg);
+  background-repeat: no-repeat;
   background-position: center;
-  height: 70vh;
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 50vh;
+}
+
+.goal h2, .goal p, .personal-p {
+  text-align: center;
+  align-self: center;
+}
+
+.goal-btn {
+  width: 8%;
+  height: 5em;
+}
+
+.goal button {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.personal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". personal-p . personal-img personal-img";
+  margin: 4rem;
+}
+
+.personal img {
+  width: 100%;
 }

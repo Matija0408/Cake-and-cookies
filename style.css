@@ -67,9 +67,8 @@
 .logo {
   align-self: center;
   text-align: center;
-  border: 1px solid white;
   color: white;
-  padding: 2rem;
+  /* padding: 5rem; */
 }
 
 .wrapper {
@@ -92,7 +91,7 @@ li {
 }
 li a {
   display: inline-block;
-  padding: 2rem;
+  padding: 1.5rem;
   text-decoration: none;
   color: white;
   transition-duration: 0.3s;

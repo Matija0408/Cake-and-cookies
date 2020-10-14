@@ -229,7 +229,6 @@ i {
 .mail-contact {
   display: flex;
   justify-content: center;
-  background: purple;
   height: 95vh;
 }
 
@@ -245,8 +244,8 @@ i {
 
 .map {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  background: green;
   height: 95vh;
 }
 
@@ -255,10 +254,18 @@ textarea {
 }
 
 .map-box {
-  width: 80%;
-  height: 50%;
+  width: 65%;
+  height: 30%;
   align-self: center;
-  background: orange;
+  border: 2px solid  rgb(202, 202, 202);
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  width: 65%;
+  height: 30%;
+  align-self: center;
 }
 
 /* .mainimg {

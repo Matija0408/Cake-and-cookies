@@ -37,6 +37,7 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <header class="wrapper">
     <div class="logo">
       <p>Place logo here or (Kod Simone)</p>
@@ -50,22 +51,21 @@
     </nav>
   </header>
   <section class="contact-wrap">
+    <!-- EMAIL CONTACT FORM -->
     <div class="mail-contact">
       <div class="mail-form">
-        <h2>Let's work together</h2>
+        <h2>Get in touch</h2>
         <p>Request samples, a consultation or just say hi.<br> We'd love to hear from you.</p>
         <form action="#" onsubmit="return sendMail(this);">
-
-          <!--play around with required option-->
-
           <input type="text" name="name" placeholder="Your name" required>
           <input type="email" name="emailaddress" placeholder="Your email" required>
-          <textarea name="textarea" id="" placeholder="What would you like us to make for you?..."></textarea>
+          <textarea name="textarea" id="" placeholder="What would you like us to bake for you?..."></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
     </div>
-
+    <div class="mail-black"></div>
+    <!-- GOOGLE MAPS SECTION -->
     <div class="map">
       <div class="location">
         <div>
@@ -84,8 +84,9 @@
       </div>
       <div id="map" class="map-box"></div>
     </div>
+    <div class="map-black"></div>
   </section>
-
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-icons">
       <a href="#"><i class="fab fa-instagram"></i></a>
@@ -94,8 +95,6 @@
   </footer>
   </section>
   <script src="script.js"></script>
-  <!-- <script
-    src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script> -->
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnkbpXZE-afbQdXR9W_MRo3Q3Pr-yglbQ&callback=initMap">
     </script>

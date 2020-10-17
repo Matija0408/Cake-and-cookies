@@ -62,6 +62,15 @@
   grid-area: map;
 }
 
+.mail-black{
+  grid-area: mail-black;
+}
+
+.map-black{
+  grid-area: map-black;
+}
+
+
 /* GRID AREA */
 
 .logo {
@@ -222,22 +231,31 @@ i {
   /* background:url(assets/img/sweets-tea-snacks-4313400_1920.jpg)center center/cover no-repeat; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "mail-contact map" "footer footer";
+  grid-template-rows:auto;
+  grid-template-areas: "mail-contact mail-black" "map-black map" "footer footer";
 }
 
-.contact-wrap::after{
+.mail-black{
+  background: black;
+  border-radius: 100% 0 0 0.4%;
+}
+.map-black{
+  background:black;
+  border-radius: 0 100% 0 0;
+}
+
+/* .contact-wrap::after{
 content:"";
 background:url(assets/img/sweets-tea-snacks-4313400_1920.jpg)center center/cover no-repeat;
 background-attachment: fixed;
-opacity: 0.3;
+opacity: 0.9;
 top: 0;
 left: 0;
 bottom: 0;
 right: 0;
 position: absolute;
 z-index: -1;  
-}
+} */
 
 .mail-contact {
   display: flex;
@@ -249,7 +267,7 @@ z-index: -1;
 
 
 .mail-form {
-  width: 50%;
+    width: 50%;
   align-self: center;
 }
 
@@ -259,6 +277,7 @@ z-index: -1;
 }
 .mail-form h2{
   margin-bottom: 2rem;
+  color: black;
 }
 
 .mail-form p{
@@ -267,6 +286,8 @@ z-index: -1;
   margin-bottom: 2rem;
   letter-spacing: 0.08rem;
 }
+
+
 
 .map {
   display: flex;
@@ -286,6 +307,11 @@ textarea {
   line-height: 1.3rem;
   border:1px solid rgb(145, 145, 145);
   color: rgb(81, 81, 81);
+  transition: 0.2s;
+}
+
+textarea:focus{
+  box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
 }
 
 input[type=text], input[type=email]{
@@ -295,6 +321,10 @@ input[type=text], input[type=email]{
   color: rgb(81, 81, 81);
   margin: 0.5rem 0 0.5rem 0;
   border: 1px solid rgb(145, 145, 145);
+  transition: 0.2s;
+}
+input:focus{
+  box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
 }
 
 input[type=submit]{
@@ -307,7 +337,12 @@ input[type=submit]{
   cursor: pointer;
   text-align: center;
   font-size: 0.9rem;
+  transition: 0.3s;
 }
+input[type=submit]:hover{
+  box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
+}
+
 
 .map-box {
   width: 65%;

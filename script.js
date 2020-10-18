@@ -43,3 +43,8 @@ function sendMail(contactForm) {
     );
   return false;
 }
+
+
+function borderChange(){
+  document.getElementById("mailside").style.cssText = "border-radius: 100% 0 0 0.4%";
+}

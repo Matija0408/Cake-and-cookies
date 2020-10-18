@@ -288,9 +288,13 @@ i {
 }
 
 .mail-black{
-  background: black;
-  border-radius: 100% 0 0 0.4%;
+  background: url(assets/img/kobby-mendez-idTwDKt2j2o-unsplash.jpg)center center/cover no-repeat;
+  border-radius: 0 0 0 100%;
+  transition: 1.5s;
 }
+/* .mail-black:hover{
+  border-radius: 100% 0 0 0.4%;
+} */
 
 .map-black{
   background:black;

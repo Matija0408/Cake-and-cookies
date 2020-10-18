@@ -57,15 +57,14 @@
         <h2>Get in touch</h2>
         <p>Request samples, a consultation or just say hi.<br> We'd love to hear from you.</p>
         <form action="#" onsubmit="return sendMail(this);">
-          <input type="text" name="name" placeholder="Your name" required>
+          <input onclick="borderChange()" type="text" name="name" placeholder="Your name" required>
           <input type="email" name="emailaddress" placeholder="Your email" required>
           <textarea name="textarea" id="" placeholder="What would you like us to bake for you?..."></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
     </div>
-    <div class="mail-black">
-    </div>
+    <div id="mailside" class="mail-black"></div>
     <!-- GOOGLE MAPS SECTION -->
     <div class="map">
       <div class="location">

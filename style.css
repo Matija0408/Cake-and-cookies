@@ -46,9 +46,9 @@
   grid-area: product-range-h2;
 }
 
-.flex-container {
+/* .flex-container {
   grid-area: flex-container;
-}
+} */
 
 .contact-wrap {
   grid-area: contact-wrap;
@@ -89,6 +89,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 li {
@@ -211,6 +212,10 @@ i {
   justify-content: center;
 }
 
+/* GALERY IMGAGE DESCRIPTION */
+
+
+
 /* .flex-container img {
   width: 48%;
   margin: 1%;
@@ -222,10 +227,57 @@ i {
 } */
 
 .flex-container img {
-  width: 24%;
-  margin: 1%;
+  /* width: 24%; */
+  /* margin: 1%; */
   box-shadow: 10px 20px 20px 5px rgba(0, 0, 0, 0.3);
 }
+
+.imgcontainer{
+  position: relative;
+  width: 24%;
+  margin: 1%;
+}
+
+.imgcontainer img{
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 100%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 20%;
+  visibility: hidden;
+}
+
+.imgcontainer:hover .overlay{
+  opacity: 0.6;
+}
+
+.imgcontainer:hover .text{
+  visibility: visible;
+}
+
+
 
 .contact-wrap {
   /* background:url(assets/img/sweets-tea-snacks-4313400_1920.jpg)center center/cover no-repeat; */
@@ -239,6 +291,7 @@ i {
   background: black;
   border-radius: 100% 0 0 0.4%;
 }
+
 .map-black{
   background:black;
   border-radius: 0 100% 0 0;

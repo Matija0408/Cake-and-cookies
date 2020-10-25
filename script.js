@@ -44,7 +44,21 @@ function sendMail(contactForm) {
   return false;
 }
 
-
+//Border change on the picture, on the contact page
+//When user clicks on the "Your name" field in the form border-radius value is changed.
 function borderChange(){
   document.getElementById("mailside").style.cssText = "border-radius: 100% 0 0 0.4%";
+}
+// Highlights nav links orrange
+window.onload = function(){
+  var path = location.pathname;
+  console.log(path);
+  //Compares current var path value, and if same, inserts .currentpage class into the nav link
+  if(path == "/index.html"){
+    document.getElementById("about").className = "currentpage";
+  }else if (path == "/gallery.html"){
+    document.getElementById("gallery").className = "currentpage";
+  }else if(path == "/contact.html"){
+    document.getElementById("contact").className = "currentpage";
+  }
 }

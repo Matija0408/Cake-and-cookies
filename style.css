@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 /* GRID AREA */
 
 .logo {
@@ -92,6 +95,12 @@
   z-index: 1;
 }
 
+.logo{
+  font-family: 'Sansita Swashed', cursive, sans-serif;
+letter-spacing: 3px;
+}
+
+
 li {
   color: white;
   float: left;
@@ -111,9 +120,20 @@ a:hover {
   color: rgb(185, 185, 185);
 }
 
+.currentpage{
+  color: orange;
+  /* text-shadow:15px 15px 15px orange; */
+}
+.currentpage:hover{
+  color:orange;
+}
+
 img {
   width: 100%;
 }
+/* #about{
+  color: orange;
+} */
 
 .mainwrap {
   display: grid;

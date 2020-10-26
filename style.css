@@ -105,8 +105,11 @@ a{
 }
 
 .logo{
-  font-family: 'Sansita Swashed', cursive, sans-serif;
-letter-spacing: 3px;
+  /* font-family: 'Sansita Swashed', cursive, sans-serif; */
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 
@@ -183,6 +186,10 @@ img {
 
 
 .goal-header h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  text-decoration: underline;
+  font-weight: 700;
   text-align: center;
   color: black;
   border-radius: -10%;
@@ -217,6 +224,16 @@ img {
 .personal-p {
   align-self: center;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  color: rgb(75, 75, 75);
+  letter-spacing: 2px;
+  line-height: 1.6em;
+}
+
+.dedication-p h2, .personal-p h2{
+  margin-bottom: 1.5em;
+  color: rgb(53, 53, 53);
 }
 
 .footer {
@@ -252,8 +269,10 @@ i {
 }
 
 .product-range-h2 {
+  font-family: 'Dancing Script', cursive;
+  text-decoration: underline;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 3%;
 }
 
@@ -370,12 +389,11 @@ z-index: -1;
   justify-content: center;
   height: 95vh;
   line-height: 1.6rem;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
-
 .mail-form {
-    width: 50%;
+  width: 50%;
   align-self: center;
 }
 
@@ -384,15 +402,17 @@ z-index: -1;
   width: 100%;
 }
 .mail-form h2{
-  margin-bottom: 2rem;
-  color: black;
+  margin-bottom: 1.5em;
+  color: rgb(53, 53, 53);
 }
 
 .mail-form p{
-  color:black;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  color: rgb(75, 75, 75);
+  letter-spacing: 2px;
+  line-height: 1.6em;
   margin-bottom: 2rem;
-  letter-spacing: 0.08rem;
 }
 
 
@@ -439,6 +459,7 @@ input[type=submit]{
   width: 90px;
   background: black;
   color: white;
+  border: 1px solid orange;
   border-radius: 10%;
   padding:0.8rem;
   margin-top: 1rem;
@@ -448,7 +469,7 @@ input[type=submit]{
   transition: 0.3s;
 }
 input[type=submit]:hover{
-  box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
+  box-shadow: 0px 0px 10px 3px orange;
 }
 
 
@@ -465,12 +486,20 @@ input[type=submit]:hover{
   width: 65%;
   height: 30%;
   align-self: center;
-  line-height: 1.6rem;
-  font-size: 1.2rem;
+  /* line-height: 1.6rem; */
+  /* font-size: 1.2rem; */
 }
 
 .location p{
-font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+font-weight:400;
+color: rgb(75, 75, 75);
+letter-spacing: 2px;
+line-height: 1.6em;
+}
+
+.location h2{
+  color: rgb(53, 53, 53);
 }
 
 

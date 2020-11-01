@@ -640,5 +640,9 @@ line-height: 1.6em;
     /* padding:13rem 0 10rem 0; */
     padding: 3rem;
   }
+
+  .dedication-img, .personal-img{
+    padding: 3rem 0;
+  }
   
 }

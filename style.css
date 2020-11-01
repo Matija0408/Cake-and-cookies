@@ -542,7 +542,7 @@ line-height: 1.6em;
   color: rgb(53, 53, 53);
 }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
   .burger-menu{
     display: flex;
   }

@@ -197,6 +197,7 @@ img {
   height: 60vh;
 }
 
+
 .goal {
   background: url(assets/img/apple-pie-474954_1920.jpg);
   background-repeat: no-repeat;
@@ -551,6 +552,14 @@ line-height: 1.6em;
 
   .wrapper{
     flex-flow: column;
+    position: inherit;
+    /* display: flex;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1; */
   }
 
   .navbar ul{
@@ -567,6 +576,42 @@ line-height: 1.6em;
   .navbar li a {
     padding: .5rem;
   }
+
+  .mainwrap {
+    display: flex;
+    flex-flow: column;
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "mainimg mainimg mainimg mainimg mainimg mainimg" ". dedication-img dedication-img dedication-p dedication-p ." "goal goal goal goal goal goal" 
+    ". . goal-header goal-header . ."
+    ". personal-p personal-p personal-img personal-img ."
+    ". . goal-btn goal-btn . ."
+    "footer footer footer footer footer footer"; */
+  }
+
+  .mainimg {
+    background-image: none;
+    height: auto;
+    /* display: none
+    background-image: url(assets/img/sweets-887722_1920.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh; */
+  }
+  /* .goal {
+    background-image: none;
+    height: auto; */
+    /* background: url(assets/img/apple-pie-474954_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 50vh; */
+  }
+  
 }
 
 /* .mainimg {

@@ -7,25 +7,7 @@ function initMap() {
   });
   var marker = new google.maps.Marker({ position: bakery, map: map });
 }
-// MAIL CONTACT FORM
-
-// function sendMail(contactForm) {
-//   emailjs
-//     .send("gmail_cake_and_cookies", "template-cb2k35k", {
-//       from_name: contactForm.name.value,
-//       from_email: contactForm.mail.value,
-//       message: contactForm.textarea.value,
-//     })
-//     .then(
-//       function (response) {
-//         console.log("Email sent successfuly!", response);
-//       },
-//       function (error) {
-//         console.log("Email not sent!", error);
-//       }
-//     );
-// }
-
+//MAIL CONTACT FORM
 function sendMail(contactForm) {
   emailjs
     .send("gmail", "cake_cookies", {
@@ -45,14 +27,13 @@ function sendMail(contactForm) {
 }
 
 //Border change on the picture, on the contact page
-//When user clicks on the "Your name" field in the form border-radius value is changed.
+//When user clicks on the "Your name" field in the form, border-radius value is changed.
 function borderChange(){
   document.getElementById("mailside").style.cssText = "border-radius: 100% 0 0 0.4%";
 }
 // Highlights nav links orrange
 window.onload = function(){
   var path = location.pathname;
-  console.log(path);
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
   if(path == "/index.html"){
     document.getElementById("about").className = "currentpage";
@@ -61,6 +42,14 @@ window.onload = function(){
   }else if(path == "/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
+//Inserts an img into the div with mainimg class
+//mainimg css background removed with @media and this one insterter as HTML element
+  var x = document.createElement('img');  
+  x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
+  x.setAttribute('width', '100%');
+  x.setAttribute('height', 'auto');
+  x.setAttribute('alt', 'some cakes');
+  document.getElementById('landingPageFirstImage').appendChild(x);
 }
 
 //On burger menu click, main menu will drop down
@@ -70,3 +59,14 @@ var navbar = document.getElementsByClassName('navbar')[0];
 burgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active');
 })
+
+
+
+// window.onload = function(){
+//   var x = document.createElement('img');  
+//   x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
+//   x.setAttribute('width', '100%');
+//   x.setAttribute('height', 'auto');
+//   x.setAttribute('alt', 'some cakes');
+//   document.getElementById('landingPageFirstImage').appendChild(x);
+// }

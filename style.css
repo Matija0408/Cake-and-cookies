@@ -11,13 +11,13 @@ a{
 
 /* GRID AREA */
 
-.logo {
+/* .logo {
   grid-area: logo;
-}
+} */
 
-.navbar {
+/* .navbar {
   grid-area: header;
-}
+} */
 
 .dedication-p {
   grid-area: dedication-p;
@@ -87,29 +87,58 @@ a{
 
 .logo {
   align-self: center;
-  text-align: center;
+  /* text-align: center; */
   color: white;
-  /* padding: 5rem; */
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(8, 2fr);
-  grid-template-rows: auto;
-  grid-template-areas: ". logo logo . . header header header" "footer footer footer footer footer footer footer footer";
-  background-color: black;
+  display: flex;
   position: fixed;
   top: 0;
+  background-color: black;
+  justify-content: space-between;
   width: 100%;
   z-index: 1;
+
+  /* grid-template-columns: repeat(8, 2fr); */
+  /* grid-template-rows: auto;
+  grid-template-areas: ". logo logo . . header header header" ; */
+  /* position: fixed; */
+  /* top: 0; */
+  /* "footer footer footer footer footer footer footer footer"; */
+}
+
+.burger-menu{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  width: 30px;
+  height: 20px;
+  display: none;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.burger-menu .bar{
+  background: white;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin-right: 12rem;
 }
 
 .logo{
   /* font-family: 'Sansita Swashed', cursive, sans-serif; */
   font-family: 'Dancing Script', cursive;
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-decoration: underline;
+  margin: 1rem 0 1rem 12rem;
 }
 
 
@@ -503,6 +532,42 @@ line-height: 1.6em;
   color: rgb(53, 53, 53);
 }
 
+@media (max-width: 600px){
+  .burger-menu{
+    display: flex;
+  }
+  .logo{
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .navbar{
+    display: none;
+    width: 100%;
+  }
+
+  .active{
+    display: flex;
+  }
+
+  .wrapper{
+    flex-flow: column;
+  }
+
+  .navbar ul{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .navbar li{
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar li a {
+    padding: .5rem;
+  }
+}
 
 /* .mainimg {
   background-image: url(assets/img/sweets-887722_1920.jpg);

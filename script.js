@@ -62,3 +62,11 @@ window.onload = function(){
     document.getElementById("contact").className = "currentpage";
   }
 }
+
+//On burger menu click, main menu will drop down
+var burgerMenu = document.getElementsByClassName('burger-menu')[0];
+var navbar = document.getElementsByClassName('navbar')[0];
+//on click toggle .active class in the navbar to show and hide it
+burgerMenu.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+})

@@ -601,89 +601,15 @@ line-height: 1.6em;
     background-attachment: fixed;
     height: 60vh; */
   }
-  /* .goal {
+  .goal {
     background-image: none;
-    height: auto; */
+    height: auto; 
     /* background: url(assets/img/apple-pie-474954_1920.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
     background-size: 100%;
-    height: 50vh; */
+    height: 50vh;*/
   }
   
 }
-
-/* .mainimg {
-  background-image: url(assets/img/sweets-887722_1920.jpg);
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 51vh;
-}
-
-.dedication-img img {
-  width: 100%;
-}
-
-.dedication {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: ". dedication-p . dedication-img dedication-img";
-  margin-top: 4rem;
-  padding: 3rem;
-}
-
-.dedication-p {
-  align-self: center;
-  text-align: center;
-}
-
-.dedication-p p {
-  margin-top: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-.goal {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  background: url(assets/img/apple-pie-474954_1920.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 100%;
-  height: 50vh;
-}
-
-.goal h2, .goal p, .personal-p {
-  text-align: center;
-  align-self: center;
-}
-
-.goal-btn {
-  width: 8%;
-  height: 5em;
-}
-
-.goal button {
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.personal {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: ". personal-p . personal-img personal-img";
-  margin: 4rem;
-}
-
-.personal img {
-  width: 100%;
-} */

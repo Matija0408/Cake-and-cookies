@@ -50,6 +50,14 @@ window.onload = function(){
   x.setAttribute('height', 'auto');
   x.setAttribute('alt', 'some cakes');
   document.getElementById('landingPageFirstImage').appendChild(x);
+
+
+  var y = document.createElement('img');
+  y.setAttribute('src', 'assets/img/apple-pie-474954_1920.jpg');
+  y.setAttribute('width', '100%');
+  y.setAttribute('height', 'auto');
+  y.setAttribute('alt', 'apple pie');
+  document.getElementById('landingPageGoalImg').appendChild(y);
 }
 
 //On burger menu click, main menu will drop down

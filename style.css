@@ -448,7 +448,7 @@ z-index: -1;
 
 .map {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   height: 95vh;
 }

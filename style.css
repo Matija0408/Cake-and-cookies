@@ -182,7 +182,7 @@ img {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "mainimg mainimg mainimg mainimg mainimg mainimg" ". dedication-img dedication-img dedication-p dedication-p ." "goal goal goal goal goal goal" 
-  ". . goal-header goal-header . ."
+  ". goal-header goal-header goal-header goal-header ."
   ". personal-p personal-p personal-img personal-img ."
   ". . goal-btn goal-btn . ."
   "footer footer footer footer footer footer";
@@ -231,7 +231,8 @@ img {
   text-align: center;
   color: black;
   border-radius: -10%;
-  padding:13rem 0 10rem 0;
+  padding: 3rem;
+  /* padding:13rem 0 10rem 0; */
 }
 
 .goal-btn button{
@@ -625,5 +626,19 @@ line-height: 1.6em;
   
   #landingPageGoalImg{
     display: block;
+    padding: 3rem 0;
   }
+
+  .goal-header h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    border-radius: -10%;
+    /* padding:13rem 0 10rem 0; */
+    padding: 3rem;
+  }
+  
 }

@@ -96,17 +96,71 @@ a{
   position: fixed;
   top: 0;
   background-color: black;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   z-index: 1;
-
-  /* grid-template-columns: repeat(8, 2fr); */
-  /* grid-template-rows: auto;
-  grid-template-areas: ". logo logo . . header header header" ; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* "footer footer footer footer footer footer footer footer"; */
 }
+
+.currentpage{
+  color: orange !important;
+  text-shadow:0px 0px 3px orange;
+  text-decoration: underline;
+}
+
+.currentpage:hover{
+  color:orange;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar ul{
+  display:flex;
+  margin-right: 12rem;
+}
+
+.navbar ul li {
+  padding: 0 2rem;
+}
+
+.navbar ul li a{
+  color:white;
+  font-size: 1.5rem;
+  transition-duration: 0.3s;
+}
+
+.logo{
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 1rem 0 1rem 12rem;
+}
+
+.navbar ul li a:hover {
+  color: rgb(185, 185, 185);
+}
+
+/* li {
+  color: white;
+  float: left;
+  list-style-type: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+} */
+
+/* li a {
+  display: inline-block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.3s;
+}  */
+
+
 
 .burger-menu{
   position: absolute;
@@ -126,56 +180,11 @@ a{
   border-radius: 10px;
 }
 
-.navbar{
-  display: flex;
-  align-items: center;
-  margin-right: 12rem;
-}
 
-.logo{
-  /* font-family: 'Sansita Swashed', cursive, sans-serif; */
-  font-family: 'Dancing Script', cursive;
-  letter-spacing: 3px;
-  font-size: 1.5em;
-  text-decoration: underline;
-  margin: 1rem 0 1rem 12rem;
-}
-
-
-li {
-  color: white;
-  float: left;
-  list-style-type: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-li a {
-  display: inline-block;
-  padding: 1.5rem;
-  text-decoration: none;
-  color: white;
-  transition-duration: 0.3s;
-}
-
-a:hover {
-  color: rgb(185, 185, 185);
-}
-
-.currentpage{
-  color: orange;
-  text-shadow:0px 0px 3px orange;
-  text-decoration: underline;
-}
-.currentpage:hover{
-  color:orange;
-}
 
 img {
   width: 100%;
 }
-/* #about{
-  color: orange;
-} */
 
 .mainwrap {
   display: grid;
@@ -201,7 +210,6 @@ img {
   display:none;
 }
 
-
 .goal {
   background: url(assets/img/apple-pie-474954_1920.jpg);
   background-repeat: no-repeat;
@@ -222,7 +230,6 @@ img {
   padding: 3rem;
 }
 
-
 .goal-header h2{
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
@@ -232,7 +239,6 @@ img {
   color: black;
   border-radius: -10%;
   padding: 3rem;
-  /* padding:13rem 0 10rem 0; */
 }
 
 .goal-btn button{
@@ -251,6 +257,7 @@ img {
   cursor: pointer;
   box-shadow: 0 0 3px 2px orange;
 }
+
 .goal-btn a{
   color: black;
 }
@@ -294,14 +301,6 @@ i {
   padding: 1rem;
 }
 
-/* .gallery-wrap {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: ". . . product-range-h2 product-range-h2 . . ." "footer footer footer footer footer footer footer footer";
-  margin-top: 10em;
-} */
-
 .gallery-wrap {
   margin-top: 8%;
   margin-bottom: 4%;
@@ -321,23 +320,7 @@ i {
   justify-content: center;
 }
 
-/* GALERY IMGAGE DESCRIPTION */
-
-
-
-/* .flex-container img {
-  width: 48%;
-  margin: 1%;
-} */
-
-/* .flex-container img {
-  width: 32%;
-  margin: 0.6%;
-} */
-
 .flex-container img {
-  /* width: 24%; */
-  /* margin: 1%; */
   box-shadow: 10px 20px 20px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -362,7 +345,6 @@ i {
   background: black;
   opacity: 0;
   transition: 0.4s ease-in-out;
-
 }
 
 .text{
@@ -389,7 +371,6 @@ i {
 
 
 .contact-wrap {
-  /* background:url(assets/img/sweets-tea-snacks-4313400_1920.jpg)center center/cover no-repeat; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:auto;
@@ -401,34 +382,17 @@ i {
   border-radius: 0 0 0 100%;
   transition: 1.5s;
 }
-/* .mail-black:hover{
-  border-radius: 100% 0 0 0.4%;
-} */
 
 .map-black{
   background:black;
   border-radius: 0 100% 0 0;
 }
 
-/* .contact-wrap::after{
-content:"";
-background:url(assets/img/sweets-tea-snacks-4313400_1920.jpg)center center/cover no-repeat;
-background-attachment: fixed;
-opacity: 0.9;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-position: absolute;
-z-index: -1;  
-} */
-
 .mail-contact {
   display: flex;
   justify-content: center;
   height: 95vh;
   line-height: 1.6rem;
-  /* font-size: 1.2rem; */
 }
 
 .mail-form {
@@ -440,6 +404,7 @@ z-index: -1;
   display: block;
   width: 100%;
 }
+
 .mail-form h2{
   margin-bottom: 1.5em;
   color: rgb(53, 53, 53);
@@ -453,8 +418,6 @@ z-index: -1;
   line-height: 1.6em;
   margin-bottom: 2rem;
 }
-
-
 
 .map {
   display: flex;
@@ -490,6 +453,7 @@ input[type=text], input[type=email]{
   border: 1px solid rgb(145, 145, 145);
   transition: 0.2s;
 }
+
 input:focus{
   box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
 }
@@ -508,6 +472,7 @@ input[type=submit]{
   letter-spacing: 2px;
   transition: 0.3s;
 }
+
 input[type=submit]:hover{
   box-shadow: 0px 0px 10px 3px orange;
 }
@@ -526,8 +491,6 @@ input[type=submit]:hover{
   width: 65%;
   height: 30%;
   align-self: center;
-  /* line-height: 1.6rem; */
-  /* font-size: 1.2rem; */
 }
 
 .location p{
@@ -575,6 +538,7 @@ line-height: 1.6em;
     display: flex;
     flex-flow: column;
     width: 100%;
+    margin: 0;
   }
 
   .navbar li{
@@ -582,8 +546,8 @@ line-height: 1.6em;
     text-align: center;
   }
 
-  .navbar li a {
-    padding: .5rem;
+  .navbar ul li, .navbar ul li a {
+    padding: .6rem;
   }
 
   .mainwrap {
@@ -644,5 +608,16 @@ line-height: 1.6em;
   .dedication-img, .personal-img{
     padding: 3rem 0;
   }
+ 
+  .wrapper{
+    position: relative;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 5em;
+    background: black;
+  }
+
   
 }

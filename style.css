@@ -477,7 +477,6 @@ input[type=submit]:hover{
   box-shadow: 0px 0px 10px 3px orange;
 }
 
-
 .map-box {
   width: 65%;
   height: 30%;
@@ -505,7 +504,7 @@ line-height: 1.6em;
   color: rgb(53, 53, 53);
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
   .burger-menu{
     display: flex;
   }
@@ -619,5 +618,53 @@ line-height: 1.6em;
     background: black;
   }
 
-  
+  .contact-wrap {
+    display: flex;
+    flex-flow: column;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas: "mail-contact mail-black" "map-black map" "footer footer"; */
+  } 
+
+  .mail-contact{ 
+    margin-top: 5em;
+    height: auto;
+  }
+
+  .mail-form, .location{
+    width: 90%;
+  }
+
+  .map-box{
+    width: 90%;
+    height: 500px;
+    margin: 2em 0;
+  }
+
+  .mail-black{
+    display: none;
+  }
+
+  .mail-form{
+    margin-bottom: 3em;
+  }
+
+  .map-black{
+    display: none;
+  }
+}
+
+@media (max-width: 599px){
+  .imgcontainer{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px){
+  .imgcontainer{
+    width: 48%;
+  }
+
 }

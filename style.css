@@ -653,6 +653,10 @@ line-height: 1.6em;
   .map-black{
     display: none;
   }
+
+  /* .contact-background{
+    background: url(assets/img/alex-loup-On2VseHUDXw-unsplash.jpg)center center/cover no-repeat;
+  } */
 }
 
 @media (max-width: 599px){

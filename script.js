@@ -31,8 +31,11 @@ function sendMail(contactForm) {
 function borderChange(){
   document.getElementById("mailside").style.cssText = "border-radius: 100% 0 0 0.4%";
 }
-// Highlights nav links orrange
-window.onload = function(){
+
+
+
+
+window.onload = setTimeout(function(){
   var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
   if(path == "/index.html"){
@@ -42,23 +45,26 @@ window.onload = function(){
   }else if(path == "/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
-//Inserts an img into the div with mainimg class
-//mainimg css background removed with @media and this one insterter as HTML element
-  var x = document.createElement('img');  
-  x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
-  x.setAttribute('width', '100%');
-  x.setAttribute('height', 'auto');
-  x.setAttribute('alt', 'some cakes');
-  document.getElementById('landingPageFirstImage').appendChild(x);
+}, 5000);
+// Highlights nav links orrange
+// window.onload = function(){
+/// //Inserts an img into the div with mainimg class
+// //mainimg css background removed with @media and this one insterter as HTML element
+//   var x = document.createElement('img');  
+//   x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
+//   x.setAttribute('width', '100%');
+//   x.setAttribute('height', 'auto');
+//   x.setAttribute('alt', 'some cakes');
+//   document.getElementById('landingPageFirstImage').appendChild(x);
 
 
-  var y = document.createElement('img');
-  y.setAttribute('src', 'assets/img/apple-pie-474954_1920.jpg');
-  y.setAttribute('width', '100%');
-  y.setAttribute('height', 'auto');
-  y.setAttribute('alt', 'apple pie');
-  document.getElementById('landingPageGoalImg').appendChild(y);
-}
+//   var y = document.createElement('img');
+//   y.setAttribute('src', 'assets/img/apple-pie-474954_1920.jpg');
+//   y.setAttribute('width', '100%');
+//   y.setAttribute('height', 'auto');
+//   y.setAttribute('alt', 'apple pie');
+//   document.getElementById('landingPageGoalImg').appendChild(y);
+// }
 
 //On burger menu click, main menu will drop down
 var burgerMenu = document.getElementsByClassName('burger-menu')[0];

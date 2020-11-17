@@ -50,7 +50,7 @@ function borderChange(){
 console.log(location.pathname);
 // Highlights nav links orrange
 window.onload = function(){
-/ //Inserts an img into the div with mainimg class
+//Inserts an img into the div with mainimg class
 //mainimg css background removed with @media and this one insterter as HTML element
   var x = document.createElement('img');  
   x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');

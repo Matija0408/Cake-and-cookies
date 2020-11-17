@@ -35,23 +35,34 @@ function borderChange(){
 
 
 
-// window.onload = setTimeout(function(){
-//   var path = location.pathname;
-//   //Compares current var path value, and if same, inserts .currentpage class into the nav link
-//   if(path == "/index.html"){
-//     document.getElementById("about").className = "currentpage";
-//   }else if (path == "/gallery.html"){
-//     document.getElementById("gallery").className = "currentpage";
-//   }else if(path == "/contact.html"){
-//     document.getElementById("contact").className = "currentpage";
-//   }
-// }, 5000);
+window.onload = setTimeout(function(){
+  var path = location.pathname;
+  //Compares current var path value, and if same, inserts .currentpage class into the nav link
+  if(path == "/index.html"){
+    document.getElementById("about").className = "currentpage";
+  }else if (path == "/gallery.html"){
+    document.getElementById("gallery").className = "currentpage";
+  }else if(path == "/contact.html"){
+    document.getElementById("contact").className = "currentpage";
+  }
+}, 5000);
 
 console.log(location.pathname);
 // Highlights nav links orrange
 window.onload = function(){
+    var path = location.pathname;
+    //Compares current var path value, and if same, inserts .currentpage class into the nav link
+    if(path == "./index.html"){
+      document.getElementById("about").className = "currentpage";
+    }else if (path == "./gallery.html"){
+      document.getElementById("gallery").className = "currentpage";
+    }else if(path == "./contact.html"){
+      document.getElementById("contact").className = "currentpage";
+    }
+  
+  
 //Inserts an img into the div with mainimg class
-//mainimg css background removed with @media and this one insterter as HTML element
+//mainimg css background removed with @media and this one insterted as HTML element
   var x = document.createElement('img');  
   x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
   x.setAttribute('width', '100%');
@@ -66,7 +77,7 @@ window.onload = function(){
   y.setAttribute('height', 'auto');
   y.setAttribute('alt', 'apple pie');
   document.getElementById('landingPageGoalImg').appendChild(y);
-}
+};
 
 //On burger menu click, main menu will drop down
 var burgerMenu = document.getElementsByClassName('burger-menu')[0];

@@ -52,11 +52,11 @@ console.log(location.pathname);
 window.onload = function(){
     var path = location.pathname;
     //Compares current var path value, and if same, inserts .currentpage class into the nav link
-    if(path == "./index.html"){
+    if(path == "/Cake-and-cookies/index.html"){
       document.getElementById("about").className = "currentpage";
-    }else if (path == "./gallery.html"){
+    }else if (path == "/Cake-and-cookies/gallery.html"){
       document.getElementById("gallery").className = "currentpage";
-    }else if(path == "./contact.html"){
+    }else if(path == "/Cake-and-cookies/contact.html"){
       document.getElementById("contact").className = "currentpage";
     }
   

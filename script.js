@@ -40,67 +40,13 @@ burgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-
-
-// window.onload = function(){
-//   var x = document.createElement('img');  
-//   x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
-//   x.setAttribute('width', '100%');
-//   x.setAttribute('height', 'auto');
-//   x.setAttribute('alt', 'some cakes');
-//   document.getElementById('landingPageFirstImage').appendChild(x);
-// }
-
-// window.onload = function(){
-//   var path = location.pathname;
-//   //Compares current var path value, and if same, inserts .currentpage class into the nav link
-//   // Highlights nav links orrange
-//   if(path == "/Cake-and-cookies/index.html"){
-//     document.getElementById("about").className = "currentpage";
-//   }else if (path == "/Cake-and-cookies/gallery.html"){
-//     document.getElementById("gallery").className = "currentpage";
-//   }else if(path == "/Cake-and-cookies/contact.html"){
-//     document.getElementById("contact").className = "currentpage";
-//   }  
-
-
-
-
-
-// //////////////////////////////////////
-// //   var i = 0;
-// //   var img = [];
-// //   var time = 1000;
-
-// //   //img list
-// //   img[0] = "assets/img/pancakes-1512834_1920.jpg";
-// //   img[1] = "assets/img/mix2.jpg";
-// //   img[2] = "assets/img/mix3.jpg";
-// //   img[3] = "assets/img/mix.jpg";
-// //  //Change Image
-// //  function changeImg(){
-// //   document.slide.src = img[i];
-
-// //   if(i < img.length -1){
-// //     i++;
-// //   }else{
-// //     i = 0;
-// //   }
-
-
-// // }
-// // setTimeout("changeImg()", time);
-// // changeImg();
-// /////////////////////////////////////////
-// };
-
 function highlightCurrentPageLink(){
   var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
   // Highlights nav links orrange
-  if(path == "/Cake-and-cookies/index.html"){
+  if(path == "/Cake-and-cookies/index.html" || "index.html"){
     document.getElementById("about").className = "currentpage";
-  }else if (path == "/Cake-and-cookies/gallery.html"){
+  }else if (path == "/Cake-and-cookies/gallery.html" || "gallery.html"){
     document.getElementById("gallery").className = "currentpage";
   }else if(path == "/Cake-and-cookies/contact.html"){
     document.getElementById("contact").className = "currentpage";
@@ -128,12 +74,12 @@ function slide(){
 setTimeout("slide()", time);
 }
 
+
+
 window.onload = function(){
   slide();
-  highlightCurrentPageLink();
-
-  // //Inserts an img into the div with mainimg class
-// //mainimg css background removed with @media and this one insterted as HTML element
+  //Inserts an img into the div with mainimg class
+  //mainimg css background removed with @media and this one insterted as HTML element
 var x = document.createElement('img');  
 x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
 x.setAttribute('width', '100%');
@@ -149,3 +95,21 @@ y.setAttribute('alt', 'apple pie');
 document.getElementById('landingPageGoalImg').appendChild(y);
 
 };
+
+function startTimer(){
+  timer = setTimeout(function(){
+    var path = location.pathname;
+  //Compares current var path value, and if same, inserts .currentpage class into the nav link
+  // Highlights nav links orrange
+  if(path == "/Cake-and-cookies/index.html"){
+    document.getElementById("about").className = "currentpage";
+  }else if (path == "/Cake-and-cookies/gallery.html"){
+    document.getElementById("gallery").className = "currentpage";
+  }else if(path == "/Cake-and-cookies/contact.html"){
+    document.getElementById("contact").className = "currentpage";
+  }
+  }, 1000);
+};
+startTimer();
+
+console.log(location.pathname)

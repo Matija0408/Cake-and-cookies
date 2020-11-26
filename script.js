@@ -96,7 +96,7 @@ document.getElementById('landingPageGoalImg').appendChild(y);
 
 };
 
-function startTimer(){
+function delayedNavbarHighlight(){
   timer = setTimeout(function(){
     var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
@@ -110,6 +110,5 @@ function startTimer(){
   }
   }, 1000);
 };
-startTimer();
+delayedNavbarHighlight();
 
-console.log(location.pathname)

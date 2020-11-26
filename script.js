@@ -101,11 +101,11 @@ function highlightCurrentPageLink(){
     var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
   // Highlights nav links orrange
-  if(path == "/cake-and-cookies/index.html"){
+  if(path == "/Cake-and-cookies/index.html"){
     document.getElementById("about").className = "currentpage";
-  }else if (path == "/cake-and-cookies/gallery.html"){
+  }else if (path == "/Cake-and-cookies/gallery.html"){
     document.getElementById("gallery").className = "currentpage";
-  }else if(path == "/cake-and-cookies/contact.html"){
+  }else if(path == "/Cake-and-cookies/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
   }, 1000);

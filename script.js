@@ -112,3 +112,4 @@ function highlightCurrentPageLink(){
 };
 highlightCurrentPageLink();
 
+console.log(location.pathname);

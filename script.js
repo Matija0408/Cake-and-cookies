@@ -40,18 +40,18 @@ burgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-function highlightCurrentPageLink(){
-  var path = location.pathname;
-  //Compares current var path value, and if same, inserts .currentpage class into the nav link
-  // Highlights nav links orrange
-  if(path == "/Cake-and-cookies/index.html" || "index.html"){
-    document.getElementById("about").className = "currentpage";
-  }else if (path == "/Cake-and-cookies/gallery.html" || "gallery.html"){
-    document.getElementById("gallery").className = "currentpage";
-  }else if(path == "/Cake-and-cookies/contact.html"){
-    document.getElementById("contact").className = "currentpage";
-  }
-};
+// function highlightCurrentPageLink(){
+//   var path = location.pathname;
+//   //Compares current var path value, and if same, inserts .currentpage class into the nav link
+//   // Highlights nav links orrange
+//   if(path == "/Cake-and-cookies/index.html" || "index.html"){
+//     document.getElementById("about").className = "currentpage";
+//   }else if (path == "/Cake-and-cookies/gallery.html" || "gallery.html"){
+//     document.getElementById("gallery").className = "currentpage";
+//   }else if(path == "/Cake-and-cookies/contact.html"){
+//     document.getElementById("contact").className = "currentpage";
+//   }
+// };
 
 
 ////////////////////////////////////////////
@@ -96,19 +96,19 @@ document.getElementById('landingPageGoalImg').appendChild(y);
 
 };
 
-function delayedNavbarHighlight(){
+function highlightCurrentPageLink(){
   timer = setTimeout(function(){
     var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
   // Highlights nav links orrange
-  if(path == "/Cake-and-cookies/index.html"){
+  if(path == "/cake-and-cookies/index.html"){
     document.getElementById("about").className = "currentpage";
-  }else if (path == "/Cake-and-cookies/gallery.html"){
+  }else if (path == "/cake-and-cookies/gallery.html"){
     document.getElementById("gallery").className = "currentpage";
-  }else if(path == "/Cake-and-cookies/contact.html"){
+  }else if(path == "/cake-and-cookies/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
   }, 1000);
 };
-delayedNavbarHighlight();
+highlightCurrentPageLink();
 
